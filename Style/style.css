@@ -5,7 +5,7 @@ body {
 
 header {
     background-color: #3498db;
-    padding: 10px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #2980b9;
+    color: #000;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 main {
@@ -90,11 +92,11 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 .background-image {
-    background-image: url('https://d2908q01vomqb2.cloudfront.net/9e6a55b6b4563e652a23be9d623ca5055c356940/2021/02/17/hospital-staffing.jpg');
+    background-image: url('https://rezilirhealth.com/wp-content/uploads/2017/05/AdobeStock_229690447.jpeg');
     /* Replace with your image URL */
     background-size: cover;
     background-position: center;
@@ -104,13 +106,111 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #fff;
-    margin: 50px 0px;
-    opacity: .8;
+    color: black;
+    font-weight: bold;
+    margin: 50px 0 0px;
+    opacity: .9;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .text {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
 }
+
+
+/* Its "About" main styling  */
+
+.container {
+    display: flex;
+    /* height: 90vh; */
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.right-section {
+    background-color: #6a6363;
+    color: white;
+    padding: 20px; 
+    border-top-left-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 0;
+    
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+}
+.button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 30px;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    border-top-left-radius: 0;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .image-container {
+        height: 50vh;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .right-section {
+        background-color: #6a6363;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
