@@ -4,11 +4,16 @@ body {
 }
 
 header {
-    background-color: #3498db;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000; /* Ensures the header stays on top of other elements */
 }
 
 .logo {
@@ -23,7 +28,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #f00;
     padding: 5px;
     margin: 0 5px;
     border-radius: 10px;
@@ -31,13 +36,14 @@ nav a {
 }
 
 nav a:hover {
-    color: #000;
+    color: #ff0000;
     font-size: larger;
     font-weight: bolder;
 }
 
 main {
     text-align: center;
+    margin-top: 70px; /* Adjust this margin to accommodate the fixed header */
 }
 
 .hero-section img {
@@ -89,10 +95,12 @@ button:hover {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #000000;
+    font-weight: bolder;
+    font-size: large;
+    color: #ff0000;
     text-align: center;
-    padding: 5px 10px;
+    padding: 1px ;
 }
 
 .background-image {
@@ -194,6 +202,54 @@ textarea {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 0;
+}
+
+
+
+/* "About page" Styling is below   */
+.main_div{
+    margin: 0 30px;
+}
+.image-container1 {
+    position: relative;
+    text-align: center;
+    opacity: .9;
+}
+
+.image-container1 img {
+    width: 100%;
+    height: 450px;
+    margin: 0 0  10px 0;
+}
+
+.centered-text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-style: oblique;
+    margin-bottom: 30px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr {
+    border-bottom: 2px solid #333; /* Border between rows */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 600px) {
