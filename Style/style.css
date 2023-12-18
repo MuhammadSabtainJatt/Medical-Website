@@ -251,6 +251,23 @@ img {
     max-width: 100%;
     height: auto;
 }
+.services {
+    max-width: 800px;
+    margin: 20px auto;
+}
+.Heading{
+margin-top: 100px;
+}
+
+
+.service {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: gray;
+    box-shadow:  5px 5px 5px  5px #000000;
+}
 
 @media screen and (max-width: 600px) {
     .image-container {
@@ -269,4 +286,3 @@ img {
         border-bottom-right-radius: 0;
     }
 }
-
